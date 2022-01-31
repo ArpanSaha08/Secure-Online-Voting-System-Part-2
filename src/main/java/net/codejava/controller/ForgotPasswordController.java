@@ -18,6 +18,7 @@ import net.codejava.service.UserService;
 @RequestMapping("/forgotpassword")
 public class ForgotPasswordController {
 
+    // Bean classes..
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
@@ -32,7 +33,7 @@ public class ForgotPasswordController {
         return "sendotp.html";
     }
 
-    // -----------------------------------------------------------------
+    // ----------------------------------------------------------------- //
     @Autowired
     EmailService emailservice;
 
